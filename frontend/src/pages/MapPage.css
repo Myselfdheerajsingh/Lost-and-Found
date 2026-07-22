@@ -1,0 +1,31 @@
+.map-page {}
+.map-header { display: flex; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-bottom: 16px; }
+.map-header h1 { font-size: 22px; font-weight: 700; margin-bottom: 2px; }
+.map-header p { font-size: 14px; color: var(--text-muted); }
+
+.map-filters { display: flex; gap: 6px; }
+.map-filter-btn {
+  padding: 6px 16px; border-radius: 99px; border: 1px solid var(--border);
+  background: white; font-size: 13px; cursor: pointer; font-weight: 500; transition: all 0.15s;
+}
+.map-filter-btn.active { background: var(--text); color: white; border-color: var(--text); }
+.map-filter-btn.lost.active { background: var(--lost); border-color: var(--lost); }
+.map-filter-btn.found.active { background: var(--found); border-color: var(--found); }
+
+.map-wrap { border-radius: var(--radius); overflow: hidden; border: 1px solid var(--border); margin-bottom: 16px; }
+
+.map-legend-row { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; margin-bottom: 28px; }
+.map-legend { display: flex; gap: 20px; }
+.legend-item { display: flex; align-items: center; gap: 8px; font-size: 14px; color: var(--text-muted); }
+.legend-dot { width: 12px; height: 12px; border-radius: 50%; }
+.legend-dot.lost { background: var(--lost); }
+.legend-dot.found { background: var(--found); }
+.map-note { font-size: 12px; color: var(--text-muted); }
+
+.map-info-window { padding: 4px; min-width: 160px; }
+.info-title { font-weight: 600; font-size: 14px; margin: 6px 0 4px; }
+.info-loc { font-size: 12px; color: #666; margin-bottom: 8px; }
+.info-link { font-size: 13px; color: var(--primary); text-decoration: none; font-weight: 500; }
+
+.map-list-title { font-size: 16px; font-weight: 700; margin-bottom: 16px; }
+.map-item-list { margin-top: 8px; }
